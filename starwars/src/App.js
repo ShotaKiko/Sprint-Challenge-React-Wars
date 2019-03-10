@@ -15,9 +15,9 @@ class App extends Component {
   }
   
   
-    // handleInputChange = event => {
-    //   this.setState({ starwarsChars: event.target.value });
-    // };
+  // handleInputChange = event => {
+  //     this.setState({ starwarsChars: this.state.map(char =>{char.name}) });
+  //   };
   
     getCharacters = URL => {
     // feel free to research what this code is doing.
@@ -42,9 +42,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <h2>huuu</h2>
+        <h2>Character List</h2>
         <div className="container"> {this.state.starwarsChars.map(item => (
-            <div className="characterContainer" key={item.name}>{item.name} {item.gender} {item.mass} {item.homeworld}</div>
+            <div className="characterContainer" key={item.name}>
+              <p><strong>Name:</strong> {item.name}</p> 
+              <p><strong>Gender:</strong> {item.gender}</p> 
+              <p><strong>Mass:</strong> {item.mass} </p>
+              <a href ={item.homeworld} target="_blank"> Visit Home World</a>
+            </div>
           ))}</div>
       
       </div>
