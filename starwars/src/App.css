@@ -6,3 +6,38 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.container{
+  display: flex;
+  flex-direction: column;
+ 
+  width: 90%;
+  margin: 0 auto;
+}
+
+.characterContainer{
+  border: 10px solid #000033;
+  border-radius: 5px;
+  /* width: 50%; */
+  
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  
+  
+  color: whitesmoke;
+  background-color: black;
+  opacity: .9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #8080ff
+}
